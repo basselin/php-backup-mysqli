@@ -1,7 +1,7 @@
 BackupMySQL extends mysqli
 ==========================
 
-Ce fichier / classe PHP vous permet de créer des jeux de sauvegardes tournantes compressés de vos bases de données MySQL.
+Ce fichier / classe PHP vous permet de créer des jeux de sauvegardes tournantes compressées de vos bases de données MySQL.
 Les fichiers retournés au format GZip sont parfaitement réutilisables dans un phpMyAdmin (ou autres).
 
 Cette méthode ne requiert aucun accès root ou administrateur à votre serveur.
@@ -33,5 +33,5 @@ Options
 | `socket` | Socket | string | `ini_get('mysqli.default_socket')` |
 | `dossier` | Dossier contenant les archives GZip | string | `'./'` |
 | `nbr_fichiers` | Nombre de sauvegardes à conserver | integer | `5` |
-| `nom_fichier` | Préfix du nom des fichiers pour la sauvegarde | string | `backup` |
+| `nom_fichier` | Prefix du nom des fichiers pour la sauvegarde | string | `backup` |
 

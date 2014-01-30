@@ -1,11 +1,11 @@
 <?php
 /**
- * Sauvegarde MySQL
+ * Sauvegarde MySQL utilisant mysqli
  *
  * @package	BackupMySQL
  * @author	Benoit Asselin <contact(at)ab-d.fr>
- * @version	backup.php, 2013/01/13
- * @link	http://www.ab-d.fr/
+ * @version	backup.php, 2014/01/30
+ * @link	http://www.ab-d.fr
  *
  */
 
@@ -91,7 +91,7 @@ class BackupMySQL extends mysqli {
 	 * @param string $message HTML
 	 */
 	protected function message($message = '&nbsp;') {
-//		echo '<p style="padding:0; margin:1px 10px; font-family:sans-serif;">'. $message .'</p>';
+		//echo '<p style="padding:0; margin:1px 10px; font-family:sans-serif;">'. $message .'</p>';
 	}
 	
 	/**
