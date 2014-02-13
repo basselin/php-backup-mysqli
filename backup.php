@@ -4,7 +4,7 @@
  *
  * @package	BackupMySQL
  * @author	Benoit Asselin <contact(at)ab-d.fr>
- * @version	backup.php, 2014/01/30
+ * @version	backup.php, 2014/02/13
  * @link	http://www.ab-d.fr
  *
  */
@@ -202,7 +202,7 @@ class BackupMySQL extends mysqli {
 			rsort($fichiers);
 			
 			// Suppression...
-			for($i = $nbr_fichiers_max; $i < $nbr_fichiers_total; $i++) {
+			for($i = $nbr_fichiers_max; $i < $nbr_fichiers_total; ++$i) {
 				$this->message('<strong style="color:red;">' . htmlspecialchars($fichiers[$i]) . '</strong>');
 				unlink($this->dossier . $fichiers[$i]);
 			}
